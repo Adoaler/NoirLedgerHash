@@ -1,33 +1,35 @@
-# Política de Segurança do NoirLedger
 
-## Estado Atual
 
-O projeto NoirLedger e seu algoritmo de Proof-of-Work, NoirLedgerHash, estão atualmente em fase **experimental e de desenvolvimento ativo**.
+# NoirLedger Security Policy
 
-**NÃO USE ESTE SOFTWARE EM UM AMBIENTE DE PRODUÇÃO.**
+## Current Status
 
-As implementações das primitivas criptográficas (AES, ChaCha20, Blake3) foram desenvolvidas para a criação de um algoritmo de PoW único. Elas **não passaram por uma auditoria de segurança formal** e podem conter vulnerabilidades ou bugs sutis.
+The NoirLedger project and its Proof-of-Work algorithm, **NoirLedgerHash**, are currently in an **experimental and actively developing phase**.
 
-## Relatando uma Vulnerabilidade
+**DO NOT USE THIS SOFTWARE IN A PRODUCTION ENVIRONMENT.**
 
-A segurança do projeto é de extrema importância. Se você acredita ter encontrado uma vulnerabilidade de segurança no NoirLedgerHash ou em qualquer outro componente do projeto, nós o encorajamos a relatá-la de forma responsável.
+The implementations of cryptographic primitives (AES, ChaCha20, Blake3) were developed to support the creation of a unique PoW algorithm. These **have not undergone formal security audits** and may contain vulnerabilities or subtle bugs.
 
-**Por favor, não divulgue a vulnerabilidade publicamente** até que tenhamos tido a oportunidade de analisá-la e corrigi-la.
+## Reporting a Vulnerability
 
-Para relatar uma vulnerabilidade, por favor, entre em contato diretamente com os mantenedores do projeto. (Métodos de contato a serem definidos, como um e-mail de segurança dedicado).
+Project security is of utmost importance. If you believe you have discovered a security vulnerability in NoirLedgerHash or any other component of the project, we encourage you to report it responsibly.
 
-Agradecemos imensamente suas contribuições para ajudar a tornar o NoirLedger um projeto seguro e robusto.
+**Please do not disclose the vulnerability publicly** until we have had a chance to review and address it.
 
-## Escopo da Segurança
+To report a vulnerability, please contact the project maintainers directly. (Contact methods to be defined, such as a dedicated security email.)
 
-O escopo desta política de segurança cobre:
+We deeply appreciate your contributions in helping to make NoirLedger a secure and robust project.
 
-*   O algoritmo NoirLedgerHash (`src/NoirLedger_hash/`).
-*   As implementações de primitivas criptográficas (`src/blake3_custom/`, etc.).
-*   A lógica de benchmark e da API (`src/main.cpp`, `src/gpu/`).
+## Security Scope
 
-## Processo de Auditoria
+This security policy applies to:
 
-Reconhecemos que uma auditoria de segurança formal por terceiros independentes é um passo crucial antes que o NoirLedger possa ser considerado para uma rede principal (mainnet). Estamos comprometidos em buscar uma auditoria completa assim que o algoritmo e o código base atingirem um estado estável e de recurso completo.
+* The NoirLedgerHash algorithm (`src/NoirLedger_hash/`).
+* Implementations of cryptographic primitives (`src/blake3_custom/`, etc.).
+* Benchmark and API logic (`src/main.cpp`, `src/gpu/`).
 
-A comunidade é incentivada a revisar o código-fonte e a lógica do algoritmo. Toda contribuição nesse sentido é bem-vinda.
+## Audit Process
+
+We acknowledge that a formal security audit by independent third parties is a crucial step before NoirLedger can be considered for a mainnet launch. We are committed to pursuing a full audit once the algorithm and codebase reach a stable and feature-complete state.
+
+The community is encouraged to review the source code and algorithm logic. All contributions in this regard are welcome.
